@@ -1,0 +1,125 @@
+body{
+	background: grey;
+}
+img{
+}
+#as {
+rotate: -45deg;
+position: absolute;
+left: 100px;
+top: 100px; 
+z-index: 1;
+}
+#krol {
+rotate: -20deg;
+position: absolute;
+left: 150px;
+top: 75px; 
+z-index: 2;
+}
+#dama {
+position: absolute;
+left: 210px;
+top: 75px; 
+z-index: 3;
+}
+#walet {
+rotate: 20deg;
+position: absolute;
+left: 275px;
+top: 85px; 
+z-index: 4;
+}
+#rew {
+rotate: 45deg;
+position: absolute;
+left: 320px;
+top: 100px; 
+z-index: 5;
+}
+
+#secondAs {
+rotate: -45deg;
+position: absolute;
+left: 700px;
+top: 100px; 
+z-index: 6;
+}
+#secondKrol{
+rotate: -20deg;
+position: absolute;
+left: 750px;
+top: 75px; 
+z-index: 11;
+}
+#secondDama{
+position: absolute;
+left: 810px;
+top: 75px;  
+z-index: 8;
+}
+#secondWalet{
+rotate: 20deg;
+position: absolute;
+left: 875px;
+top: 85px; 
+z-index: 9;
+}
+#secondRew{
+rotate: 45deg;
+position: absolute;
+left: 920px;
+top: 100px; 
+z-index: 10;
+}
+/*hovery*/
+#as:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#krol:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#dama:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#walet:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#rew:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#secondAs:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#secondKrol:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#secondDama:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#secondWalet:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}
+#secondRew:hover{
+    z-index: 10;
+    transition: 0.5s;
+	scale: 1.5;
+}

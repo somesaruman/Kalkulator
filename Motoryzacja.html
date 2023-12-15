@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<head>
+    <title>MOTORYZACJA</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="tabela"/> 
+    <meta name="author" content="29"/>
+    <style type="text/css" media="screen">
+  * 
+.c .b
+{
+	position: relative;
+	display: inline-block;
+	padding: 12px 36px;
+	margin: 0px 0;
+	color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+	text-weight: bold;
+	text-transform: uppercase;
+	font-size: 11pt;
+	letter-spacing: 2px;
+	border-radius: 15px;
+	overflow: hidden;
+	background: linear-gradient(to right, red, orange, red, orange, red);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.c .d:link, .c .d:visited
+{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-color: yellow;
+}
+
+.c .d:hover, .c.d:active {
+  text-color: white;
+}
+
+.button {
+  background-color: #898989; /*#FF9898*/
+  border: none;
+  color: white;
+  padding: 2px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -2px 2px;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #555;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+hr
+{
+	color: #2cacde;
+	height: 10px;
+}
+.header
+{
+	margin-top: 90px;
+}
+.fixed-header
+{
+	position: fixed;
+	background: rgba(0,178,255,0.8);
+	text-align: justify;
+  	text-justify: inter-word;
+	top: 0;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	height: 90px;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	/*box-background-color: #f18973;
+	background-color: #f18973;*/	
+}
+.fixed-header co
+{
+	text-align: left;
+	z-index: 99;
+}
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+#scrollPath
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0px;
+	height: 100%; 
+	background: rgba(255,255,255,0.05); /*rgba(255,255,255,0.05)*/
+}
+#progressbar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 80%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+	0%, 100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(270deg);
+	}
+}
+
+body, html {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #898989;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 8px; /*grubość tabeli*/
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #FF9898; <!--#FFFFFF #FF9898-->
+  }
+
+  div.page_header span {
+    margin: 1px 0px 0px 0px;
+    text-align: center;
+    text-color: #FFFFFF;
+    font-size: 600%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px 0px;
+  }
+
+
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #fE9CB2;;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #FF7070; /*CD214F*/
+  }
+</style><!--</span>linear-gradient(to bottom right, red, yellow);-->
+
+
+
+</head><body class="header">
+
+<div class="fixed-header">
+<h1><small><nav>
+<a href="index.html" style="
+	position: relative;
+	display: inline-block;
+	padding: 12px 36px;
+	margin: 0px 0;
+	color: #fff;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11pt;
+	letter-spacing: 2px;
+	border-radius: 15px;
+	overflow: hidden;
+	background: linear-gradient(90deg,#0162c8,#55e7fc);"
+>Wróć</a>
+
+<hr color="#2ca0de">
+</nav></h1></div>
+
+<div></div>
+
+<div class="main_page">
+<div class="page_header floating_element">
+        
+        <span class="floating_element">
+          <center><p style="color:white">Motoryzacja</p></center>
+      </div>
+        </span><br>
+	<div class="c">
+
+<div class="section_header section_header_red">
+<h1><span style="font-family: Ink Free"></br><a id="spis" style="
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    text-color: #FFFFFF;
+    font-size: 600%;
+    font-weight: bold;
+    height: 99px;
+    width: 100%;
+">SPIS TREŚCI</a></span></h1><h2>
+</div><br><br>
+
+<a href="index.html" class= "b">1. Sedan</a></br>
+<a href="#hatchback" class= "b">2. Hatchback</a></br>
+<a href="#liftback" class= "b">3. Liftback</a></br>
+<a href="#kombi" class= "b">4. Kombi</a></br>
+<a href="#van" class= "b">5. VAN</a></br>
+<a href="#minivan" class= "b">6. Minivan</a></br>
+<a href="#kabriolet" class= "b">7. Kabriolet</a></br>
+<a href="#coupe" class= "b">8. Coupe</a></br>
+<a href="#suv" class= "b">9. SUV</a></br>
+<a href="#pickup" class= "b">10. Pick Up</a></br>
+</h2></br></div><br><br><br><br>
+<span>Jest wiele rodzajów samochodów. Najbardziej znane są te osobowe, wśród nich wyróżnia się jeszcze 
+wiele różnych grup, między innymi samochody typowo miejskie, ale też sportowe czy rodzinne.
+Samochody miejskie przeznaczone są do poruszania się do mieście, są idealne na zakupy czy przejażdżkę.
+ Ich zalety doceniają kobiety: są niewielkie, zwrotne i bardzo wygodnie się je prowadzi. Z kolei samochody 
+sportowe są przeznaczone do szybkiej jazdy, rekreacyjnej, raczej nie nadają się dla rodzin z dziećmi. Są to
+ idealne auta dla koneserów, miłośników motoryzacji. Rodzinne auta to np. typu kombi, pomieszczą nawet duża rodzinę,
+są bezpieczne i komfortowe.
+Przyjrzyjmy się bliżej klasyfikacji samochodów osobowych ze względu na nadwozie.
+</span>
+
+<h2><b><div class="section_header section_header_red"><a id="sedan">Sedan</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="sedan.png" title="sedan"><figcaption></figcaption></figure>
+Ten rodzaj nadwozia jest zaliczany do tak zwanej grupy podstawowej. 
+Cechą charakterystyczną jest dość pojemna przestrzeń bagażowa, która pozwala pasażerom 
+na podróżowanie w dalsze trasy, a sama pokrywa bagażnika najczęściej znajduje się poniżej linii 
+tylnej szyby i jest bez niej otwierana. Auta typu sedan występują w wersji 2- lub 4-drzwiowej 
+i są kojarzone z autami eleganckimi i luksusowymi. Przykładem takiego właśnie pojazdu może być Volkswagen Passat.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="hatchback">Hatchback(trzeci od góry)</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="hatchback.png" title="hatchback"><figcaption></figcaption></figure>
+Kolejny samochód, który można zaklasyfikować jako nadwozie podstawowe. 
+Ważnym elementem dla tego pojazdu są drzwi bagażnika otwierane razem z szybą, 
+które są uznawane za drzwi samochodu i właśnie dlatego wyróżniamy wersje 3- i 5-drzwiowe. 
+Hatchbacki najczęściej występują w przypadku aut średnich oraz małych i mają ograniczoną powierzchnię bagażową,
+ ale są także wyjątki. Jednym z nich jest Opel Signum lub Renault Laguna III.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="liftback">Liftback</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="liftback.png" title="liftback"><figcaption></figcaption></figure>
+Jest to nadwozie konstrukcyjnie bardzo zbliżone do opisywanego powyżej hatchbacka,
+ a główna różnica polega na bardziej pochylonej szybie oraz uwypuklonym bagażnikiem
+ i zwiększoną pojemnością bagażnika, co może prowadzić do ich mylenia właśnie z autami
+ typu sedan. Za przykład możemy tutaj podać Skodę Superb II generacji.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="kombi">Kombi</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="kombi.png" title="kombi"><figcaption></figcaption></figure>
+Ten rodzaj nadwozia możemy zdefiniować jako sedan, którego część przeznaczona na bagaż została wydłużona.
+ Co więcej, wysokość w dachu w obszarze przeznaczonym na bagaż jest bardzo zbliżona do wysokości,
+ którą możemy odnotować w części przeznaczonej dla pasażerów i właśnie to odróżnia auta typu kombi
+ od pojazdów typu hatchback, a klapa bagażnika również w tym przypadku jest traktowana jak drzwi.
+ Ten rodzaj nadwozia z pewnością zostanie wybrany przez osoby, które cenią sobie dużą funkcjonalność i
+ znaczną ładowność. Warto również wspomnieć o zastosowaniu tutaj popularnych relingów dachowych,
+ które pozwalają na zamontowanie dodatkowego bagażnika na przykład na rowery lub narty.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="van">VAN</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="VAN.png" title="VAN"><figcaption></figcaption></figure>
+Typ nadwozia jednobryłowego, który jest również określany mianem pojazdu wielozadaniowego. 
+Składa się na kilka typów budowy, w zależności od zastosowania i przeznaczenia, 
+a wyróżniamy zabudowę osobową do transportu osób, skrzyniową lub furgon w celu 
+przewożenia określonego towaru.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="minivan">Minivan</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="Minivan.png" title="Minivan"><figcaption></figcaption></figure>
+Inaczej nazywany także Multi Purpose Vehicle jest produkowany na podstawie nadwozia 
+samochodu osobowego i dostępny w 4 różnych klasach, a ilość siedzeń sięga nawet do 8 w 
+3 rzędach. Przykładem pojazdu typu minivan może być między innymi Citroen C4 Picasso, 
+Opel Zafira II lub Renault Scenic III.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="kabriolet">Kabriolet</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="kabriolet.png" title="Kabriolet"><figcaption></figcaption></figure>
+Auto przeznaczone jest dla wszystkich osób, które podczas jazdy uwielbiają czuć 
+wiatr we włosach i promienie słońca na skórze. Nadwozie ma formę otwartą, a dach może
+ mieć w tym wypadku formę materiałową chowaną w bagażniku naszego pojazdu lub stalową,
+ która jest zostawiana w garażu. Sztywny dach to znacznie mniejszy poziom hałasu podczas
+ podróży, ale z drugiej strony również większa masa pojazdu, a najczęściej również i mniejszy
+ bagażnik. Możemy wyróżnić nadwozia 2- i 4-drzwiowe.
+Tutaj możemy sklasyfikować także specjalną podkategorię kabrioletów, a mianowicie roadstery,
+ które są pojazdami typowo sportowymi, a charakteryzują się skróconym tyłem i długim przodem.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="coupe">Coupe</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="Coupe.png" title="Coupe"><figcaption></figcaption></figure>
+Również w tym przypadku mamy do czynienia z autami o sportowym pazurze, 
+a są one przeznaczone i projektowane w największym stopniu z myślą o kierującym 
+i osobie zajmującej miejsce obok niego. Zastosowana stylizacja jest opływowa, linia 
+dachu opada, a znaczenie ma w tym wypadku efekt wizualny oraz imponujące osiągi, co w
+ efekcie ma rozbudzać pożądanie potencjalnych nabywców, a także zazdrosne spojrzenia osób 
+mijających tę właśnie konstrukcję. Typowym przykładem jest Audi TT.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="suv">SUV (sport utility vehicle)</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="SUV.png" title="SUV"><figcaption></figcaption></figure>
+Ten rodzaj konstrukcji jest bardzo często mylony z autami typowo terenowymi.
+W rzeczywistości jest to bardzo funkcjonalne połączenie właśnie pojazdów terenowych
+oraz rodzinnych, w efekcie czego uzyskujemy dużą pojemność, komfort i luks podróżowania
+oraz zwiększony prześwit. Tutaj wyodrębnić możemy także tak zwany crossover, który
+stanowi kompromis pomiędzy samochodem osobowym a SUV-em, a przykładem jest Mitsubishi Outlander.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+<h2>
+<b><div class="section_header section_header_red"><div id="about"></div><a id="pickup">Pick Up</a></div></b></h2>
+<a href="#spis" class="button">SPIS</a>
+<figure><img src="pickup.png" title="pickup"><figcaption></figcaption></figure>
+Ten model nadwozia jest w większości przypadków łatwy do zidentyfikowania i nie budzi
+ żadnych wątpliwości, a dzieje się to za sprawą charakterystycznej skrzyni ładunkowej
+ umieszczonej za kabiną pasażerską. Sama kabina może mieć wiele kombinacji w zależności
+ od wymagań i preferencji właściciela, ale największą popularnością cieszy się tak zwana
+ podwójna kabina, która może pomieścić nawet do 6 pasażerów. Auta tego typu są rozchwytywane w Ameryce.
+Przedstawione powyżej informacje odnoszą się do charakterystycznych cech najbardziej
+ popularnych pojazdów, które możemy obserwować na naszych drogach. Obok samochodów 
+osobowych wyróżnia się również samochody dostawcze, które spotykamy przed sklepem czy
+ hurtownią - dostarczają towary do różnych punków, są pakowne i funkcjonalne. Wyróżnia 
+się również tak zwane samochody specjalne, na przykład eleganckie limuzyny, które można
+ wypożyczyć do ślubu, ale również samochody straży pożarnej czy pogotowia ratunkowego.
+<div id="progressbar"></div>
+<div id="scrollPath"></div> 
+i są kojarzone z autami eleganckimi i luksusowymi. Przykładem takiego właśnie pojazdu może być Volkswagen Passat.
+<h1><span style="font-family: Consolas", style="color: red"></span></br></h1>
+
+
+
+<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function()
+	{
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+</script>
+
+</body></html>

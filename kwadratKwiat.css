@@ -1,0 +1,61 @@
+body{
+  user-select: none;
+  background-color: bisque;
+}
+#container{
+  width: 550px;
+  margin: auto;
+  text-align: center;
+}
+span{
+  color: black;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#kwiatek{
+  display: none;
+}
+#btn:active ~ img#kwiatek{
+  display: block;
+}
+#btn:active ~ img#srodek{
+  display: none;
+}
+#btn{
+  cursor: pointer;
+}
+
+#kwadrat1{
+  border: green 4px solid;
+}
+#kwadrat2{
+  background-color: blue;
+}
+#kwadrat3{
+  background-color: black;
+}
+#kwadrat4{
+  background-color: purple;
+}
+#kwadrat5{
+  background-color: yellow;
+}
+#kwadrat1{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#kwadrat2, #kwadrat3, #kwadrat4, #kwadrat5{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

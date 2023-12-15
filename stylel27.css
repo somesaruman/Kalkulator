@@ -1,0 +1,112 @@
+@media screen and (max-width:1000px)
+{
+	*{
+	border-radius: 20px;
+	text-align: center;
+	border: solid 1px black;
+	border-style: hidden;
+	color: white;
+	font-weight: bold;
+}
+body{
+margin-left:auto;
+margin-right:auto;
+width:vw100;
+height:calc(100vh - 100px);
+font-size:1.2em;
+background: black;
+}
+header {
+background:#FFA07A;
+height: 50px;
+text-align:center;
+}
+nav {
+background:#CD5C5C;
+height: 45%;
+width: 100%;
+float: left;
+}
+main {
+background:#FFA07A;
+height: 45%;
+width: 100%;
+float: left;
+}
+main:after {
+	content:'';
+	top:0;
+	transform:translateX(100%);
+	width:100%;
+	height:220px;
+	position: absolute;
+	z-index:1;
+	animation: slide 1s infinite;
+}
+footer {
+background:#F08080;
+height: 50px;
+clear: both;
+}
+}
+
+@media screen and (min-width:1000px)
+{
+*{
+	border-radius: 20px;
+	text-align: center;
+	border: solid 1px black;
+	border-style: hidden;
+}
+body{
+margin-left:auto;
+margin-right:auto;
+width:vw100;
+height:calc(100vh - 100px);
+font-size:1.6em;
+background: black;
+}
+header {
+background:yellow;
+height: 50px;
+text-align:center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+nav {
+	background-image: radial-gradient(circle, red, orange, yellow);
+height: 100%;
+width: 25%;
+float: left;
+color: red;
+text-shadow: #FC0 1px 0 10px;
+}
+main {
+	color: white;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+background:orange;
+height: 100%;
+width: 75%;
+float: left;
+}
+footer {
+background:brown;
+height: 50px;
+clear: both;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+}
