@@ -24,7 +24,7 @@
 	border: 0;
 	outline: 0;
 
-	box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 20px 20px 60px rgba(0, 0, 0, 0.8);
 	/*background-color: transparent;*/
 }
 #plastik form input{
@@ -46,11 +46,15 @@
 form #ekran{
 	display: flex;
 	justify-content: flex-end;
-	margin: 20px;
+	margin: 24px 14px 24px 12px;
+	padding-top: 10px;
 	background-color: #273746 ;
 	border-radius: 10px;
 	box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 
+}
+h1{
+	color: #fff;
 }
 form #ekran input{
 	text-align: right;
@@ -67,4 +71,20 @@ table{
 form input.dzialanie{
 	color: #58D68D !important;
 	cursor: grabbing !important;
+}
+.shake {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
 }
